@@ -1,8 +1,7 @@
-# Don't Remove Credit @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot @Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+# Don't Remove Credit @VisualMovies1
+# Ask Doubt on telegram @sgrph
 
-# Clone Code Credit : YT - @Tech_VJ / TG - @VJ_Bots / GitHub - @VJBots
+# Clone Code Credit : YT - TG - @VisualMovies1 / GitHub - @VisualMovies
 
 import sys, glob, importlib, logging, logging.config, pytz, asyncio
 from pathlib import Path
