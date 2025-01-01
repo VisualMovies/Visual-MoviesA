@@ -550,7 +550,7 @@ async def start(client, message):
                 InlineKeyboardButton("𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥", url=OWNER_LNK)
             ]]
             if STREAM_MODE == True:
-                button.append([InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}')])
+                button.append([InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}'),])
             msg = await client.send_cached_media(
                 chat_id=message.from_user.id,
                 file_id=file_id,
@@ -612,7 +612,7 @@ async def start(client, message):
                 InlineKeyboardButton("𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥", url=OWNER_LNK)
             ]]
             if STREAM_MODE == True:
-                button.append([InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}')])
+                button.append([InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}'),])
             msg = await client.send_cached_media(
                 chat_id=message.from_user.id,
                 file_id=file_id,
@@ -676,7 +676,7 @@ async def start(client, message):
         InlineKeyboardButton("𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥", url=OWNER_LNK)
     ]]
     if STREAM_MODE == True:
-        button.append([InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}')])
+        button.append([InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}'),])
     msg = await client.send_cached_media(
         chat_id=message.from_user.id,
         file_id=file_id,
@@ -1448,7 +1448,7 @@ async def remove_premium_cmd_handler(client, message):
         
 @Client.on_message(filters.command("plan"))
 async def plans_cmd_handler(client, message): 
-    if PREMIUM_AND_REFERAL_MODE == False:
+    if PREMIUM_AND_REFERAL_MODE == True:
         return 
     btn = [            
         [InlineKeyboardButton("ꜱᴇɴᴅ ᴘᴀʏᴍᴇɴᴛ ʀᴇᴄᴇɪᴘᴛ 🧾", url=OWNER_LNK)],
@@ -1456,7 +1456,7 @@ async def plans_cmd_handler(client, message):
     ]
     reply_markup = InlineKeyboardMarkup(btn)
     await message.reply_photo(
-        photo=PAYMENT_QR,
+        photo="PAYMENT_QR",
         caption=PAYMENT_TEXT,
         reply_markup=reply_markup
     )
