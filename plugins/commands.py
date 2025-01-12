@@ -1455,7 +1455,7 @@ async def plans_cmd_handler(client, message):
         [InlineKeyboardButton("⚠️ ᴄʟᴏsᴇ / ᴅᴇʟᴇᴛᴇ ⚠️", callback_data="close_data")]
     ]
     reply_markup = InlineKeyboardMarkup(btn)
-    await message.reply_photo(photo="PAYMENT_QR", caption=PAYMENT_TEXT, reply_markup=reply_markup)
+    await message.reply_photo(photo="PAYMENT_QR", caption=PAYMENT_TEXT.format(message.from_user.mention), reply_markup=reply_markup)
         
 @Client.on_message(filters.command("myplan"))
 async def check_plans_cmd(client, message):
