@@ -125,8 +125,8 @@ VERIFY_SND_SHORTLINK_API = environ.get('VERIFY_SND_SHORTLINK_API', '')
 
 # Shortlink Info
 SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', False)) # Set True Or False
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'dashboard.smallshorts.com')
-SHORTLINK_API = environ.get('SHORTLINK_API', '901cca899db6273e13ce8783a8dbace0e1c8b807')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', '')
+SHORTLINK_API = environ.get('SHORTLINK_API', '')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/howtoopenlinkclipmate/10') # How Open Shortner Link Video Link , Channel Link Where You Upload Your Video.
 
 
