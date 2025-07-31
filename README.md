@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://envs.sh/oS4.jpg" alt="Visual-Movies-Bot Logo">
+  <img src="https://telegra.ph/file/c3fc77421da677b9bd7bd.jpg" alt="Visual-Movies-Bot Logo">
 </p>
 <h1 align="center">
   VISUAL MOVIES BOT
